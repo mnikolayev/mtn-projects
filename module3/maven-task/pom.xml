@@ -62,7 +62,7 @@
           <workingDirectory>/tmp/mtn-projects/module3/maven-task</workingDirectory>
           <arguments>
             <argument>-czf</argument>
-            <argument>file.tar.gz</argument>
+            <argument>file2.tar.gz</argument>
 	<argument>target/mikhail_nikolayev-1.0-SNAPSHOT.jar</argument>	
           </arguments>
         </configuration>
