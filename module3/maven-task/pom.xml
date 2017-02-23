@@ -5,7 +5,7 @@
   http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mtn.training</groupId>
-	<artifactId>ci-training</artifactId>
+	<artifactId>mikhail_nikolayev</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0-SNAPSHOT</version>
 	<name>maven-task</name>
@@ -38,6 +38,52 @@
 			<scope>compile</scope>
 		</dependency>
 	</dependencies>
+
+
+
+
+
+ <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.5.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <executable>tar</executable>
+          <!-- optional -->
+          <workingDirectory>/tmp/mtn-projects/module3/maven-task</workingDirectory>
+          <arguments>
+            <argument>-czf</argument>
+            <argument>file.tar.gz</argument>
+	<argument>target/mikhail_nikolayev-1.0-SNAPSHOT.jar</argument>	
+          </arguments>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </project>
-
-
